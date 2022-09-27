@@ -19,4 +19,7 @@ describe('getnumber', () => {
   it('Ignore 1 and -', () => {
     expect(getnumber('1-DEF')).toBe('1-333')
   })
+  it('Ignore special caracter', () => {
+    expect(getnumber('1-ÁEF')).toBe('1-33')
+  })
 })
