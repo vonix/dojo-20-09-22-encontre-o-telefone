@@ -16,4 +16,7 @@ describe('getnumber', () => {
   it('Get a number from this letter: DEF', () => {
     expect(getnumber('DEF')).toBe('333')
   })
+  it('Ignore 1 and -', () => {
+    expect(getnumber('1-DEF')).toBe('1-333')
+  })
 })

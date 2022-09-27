@@ -4,7 +4,7 @@ export default (word) => {
   const wordToNumber = listLetters.map((letter) => {
     const keys = Object.keys(mapLetters)
     const key = keys.find(item => item.includes(letter))
-    return mapLetters[key]
+    return mapLetters[key] ?? letter
   }).join('')
 
   return wordToNumber
