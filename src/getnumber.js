@@ -1,4 +1,7 @@
 export default (letter) => {
-
-  return 8
+  const letters ={
+    'E': 3, 
+    'T': 8
+  }
+  return letters[letter]
 }
