@@ -1,12 +1,16 @@
 export default (word) => {
-  const wordToArr = word.split('')
+  const listLetters = word.split('')
 
-  const wordToNumber = wordToArr.map((letter) => letters[letter]).join('')
+  const wordToNumber = listLetters.map((letter) => {
+    const keys = Object.keys(mapLetters)
+    const key = keys.find(item => item.includes(letter))
+    return mapLetters[key]
+  }).join('')
 
   return wordToNumber
 }
 
-const letters = {
+const mapLetters = {
   DEF: 3,
   T: 8
 }
