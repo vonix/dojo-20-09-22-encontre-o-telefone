@@ -1,4 +1,4 @@
-# dojo-20-09-22-Encontre o telefone
+# dojo-20-09-22-encontre-o-telefone
 
 Dojo na Vonix com equipe técnica para resolver o desafio do [Encontre o telefone](https://dojopuzzles.com/problems/encontre-o-telefone/)
 --

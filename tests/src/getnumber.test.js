@@ -22,4 +22,7 @@ describe('getnumber', () => {
   it('Ignore special caracter', () => {
     expect(getnumber('1-ÁEF')).toBe('1-33')
   })
+  it('Get the number from this letters and number: 1-HOME-SWEET-HOME', () => {
+    expect(getnumber('1-HOME-SWEET-HOME')).toBe('1-4663-79338-4663')
+  })
 })
